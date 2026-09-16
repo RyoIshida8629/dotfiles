@@ -3,6 +3,11 @@ export PATH="$HOME/.local/bin:$PATH"
 # starship
 eval "$(starship init zsh)"
 
+# alias
+## neovim
+alias vi="nvim"
+alias vim="nvim"
+
 # eza
 ## Long views
 alias l='eza -blF --git --header --group-directories-first --icons=auto --color=auto'
