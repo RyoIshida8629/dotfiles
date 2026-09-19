@@ -4,7 +4,7 @@ return {
   priority = 1000,
   opts = {
     -- style = "vivid", -- ハイコントラストモードを有効化
-    transparent = false, -- 背景透過を無効化
+    transparent = true, -- 背景透過を無効化
     terminal_colors = true, -- Neovim内ターミナルのカラーパレットに設定
     styles = {
       comments = { italic = true }, -- コメントをイタリック体にする

@@ -9,12 +9,12 @@ end
 config.default_domain = 'WSL:Ubuntu'
 config.audible_bell = 'Disabled'
 config.font = wezterm.font_with_fallback {
-  'UDEV Gothic NF'
+  'UDEV Gothic NF' 
 }
-config.default_cwd = "/home/ryoishida"
-config.font_size = 12
+config.default_cwd = "/home/ryoishida" -- デフォルトディレクトリ設定
+
+config.use_ime = true -- 日本語入力を有効化
+config.font_size = 12 -- フォントサイズ
+config.window_background_opacity = 0.80 -- 背景を透過
 
 return config
-
-config.use_ime = true
-config.window_background_opacity = 0.85
