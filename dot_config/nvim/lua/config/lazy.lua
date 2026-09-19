@@ -28,6 +28,8 @@ require("lazy").setup({
     { import = "plugins.solarized-osaka" },
     { import = "plugins.telescope" },
     { import = "plugins.oil" },
+    { import = "plugins.bufferline" },
+    { import = "plugins.lualine" },
   },
   -- Configure any other settings here. See the documentation for more details.
   -- colorscheme that will be used when installing plugins.
