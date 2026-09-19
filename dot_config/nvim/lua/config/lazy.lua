@@ -36,6 +36,7 @@ require("lazy").setup({
     { import = "plugins.hlchunk" },
     { import = "plugins.surround" },
     { import = "plugins.flash" },
+    { import = "plugins.tree-sitter-manager" },
   },
   -- Configure any other settings here. See the documentation for more details.
   -- colorscheme that will be used when installing plugins.
