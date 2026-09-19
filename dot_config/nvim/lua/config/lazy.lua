@@ -32,6 +32,8 @@ require("lazy").setup({
     { import = "plugins.lualine" },
     { import = "plugins.toggleterm" },
     { import = "plugins.lsp" },
+    { import = "plugins.nvim-autopairs" },
+    { import = "plugins.hlchunk" },
   },
   -- Configure any other settings here. See the documentation for more details.
   -- colorscheme that will be used when installing plugins.
