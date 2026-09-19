@@ -15,3 +15,6 @@ config.default_cwd = "/home/ryoishida"
 config.font_size = 12
 
 return config
+
+config.use_ime = true
+config.window_background_opacity = 0.85
