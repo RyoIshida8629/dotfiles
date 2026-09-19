@@ -30,6 +30,8 @@ require("lazy").setup({
     { import = "plugins.oil" },
     { import = "plugins.bufferline" },
     { import = "plugins.lualine" },
+    { import = "plugins.toggleterm" },
+    { import = "plugins.lsp" },
   },
   -- Configure any other settings here. See the documentation for more details.
   -- colorscheme that will be used when installing plugins.
