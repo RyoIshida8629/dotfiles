@@ -11,8 +11,8 @@ return {
       keywords = { italic = true }, -- キーワードをイタリック体にする
       functions = {},
       variables = {},
-      sidebars = "dark", -- サイドバー背景色を暗くする
-      floats = "dark", -- フローティングウィンドウ背景色を暗くする
+      sidebars = "transparent", -- サイドバー背景色を暗くする
+      floats = "transparent", -- フローティングウィンドウ背景色を暗くする
     },
     sidebars = { "qf", "help", "terminal" }, -- sidebars = "dark" 指定時に背景色を暗くするサイドバーの設定（例：Quickfix, ヘルプ、ターミナルを有効化）
     -- vivid_brightness = 0.3, -- style = "vivid" 指定時のテキストの明るさ指数(0~1)
