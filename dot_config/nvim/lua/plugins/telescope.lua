@@ -11,6 +11,7 @@ return {
     { "<leader>fb", "<cmd>Telescope buffers<cr>", desc = "バッファ検索" },
     { "<leader>fr", "<cmd>Telescope oldfiles<cr>", desc = "履歴検索" },
     { "<leader>fh", "<cmd>Telescope help_tags<cr>", desc = "ヘルプ検索" },
+    { "<leader>fc", function() require("telescope.builtin").find_files({ cwd = vim.fn.stdpath("config") }) end, desc = "設定ファイル検索" },
   },
   opts = {
   },
