@@ -8,7 +8,7 @@ return {
   },
   opts = {
     view_options = {
-      show_hidden = true,
+      show_hidden = true, -- 隠しファイルを表示
     },
   },
   -- Optional dependencies
