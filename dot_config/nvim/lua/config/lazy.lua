@@ -36,7 +36,7 @@ require("lazy").setup({
     { import = "plugins.hlchunk" },
     { import = "plugins.surround" },
     { import = "plugins.tree-sitter-manager" },
-    { import = "plugins.nvim-tree" },
+    { import = "plugins.neo-tree" },
   },
   -- Configure any other settings here. See the documentation for more details.
   -- colorscheme that will be used when installing plugins.
