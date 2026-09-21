@@ -3,7 +3,7 @@ return {
   lazy = false,
   priority = 1000,
   opts = {
-    -- style = "vivid", -- ハイコントラストモードを有効化
+    style = "vivid", -- ハイコントラストモードを有効化
     transparent = true, -- 背景透過を無効化
     terminal_colors = true, -- Neovim内ターミナルのカラーパレットに設定
     styles = {
@@ -15,7 +15,7 @@ return {
       floats = "dark", -- フローティングウィンドウ背景色を暗くする
     },
     sidebars = { "qf", "help", "terminal" }, -- sidebars = "dark" 指定時に背景色を暗くするサイドバーの設定（例：Quickfix, ヘルプ、ターミナルを有効化）
-    -- vivid_brightness = 0.3, -- style = "vivid" 指定時のテキストの明るさ指数(0~1)
+    vivid_brightness = 0.3, -- style = "vivid" 指定時のテキストの明るさ指数(0~1)
     hide_inactive_statusline = false, -- 非アクティブステータスラインを細い境界線に置換する設定を無効
     dim_inactive = false, -- 非アクティブウィンドウを暗くする設定を無効化
     lualine_bold = false, -- lualine テーマのセクションヘッダーを太字にする設定を無効化

@@ -35,7 +35,6 @@ require("lazy").setup({
     { import = "plugins.nvim-autopairs" },
     { import = "plugins.hlchunk" },
     { import = "plugins.surround" },
-    { import = "plugins.flash" },
     { import = "plugins.tree-sitter-manager" },
     { import = "plugins.nvim-tree" },
   },

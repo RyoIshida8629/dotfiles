@@ -12,7 +12,8 @@ return {
       direction = 'float',
       hidden = true,
     }
-    vim.keymap.set({ 'n', 't' }, '<C-\\>', function()
+
+    vim.keymap.set({ 'n', 't' }, '<leader>g', function()
       lazygit:toggle()
     end, { desc = 'Toggle Lazygit (float)' })
   end,
