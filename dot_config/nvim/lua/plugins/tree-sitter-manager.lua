@@ -5,7 +5,14 @@ return {
     parser_dir = vim.fn.stdpath("data") .. "/site/parser",
     query_dir = vim.fn.stdpath("data") .. "/site/queries",
     assume_installed = {}, -- blacklist languages
-    ensure_installed = {}, -- parsers to install at startup
+    ensure_installed = {
+      "c_sharp",
+      "lua",     
+      "vim",
+      "vimdoc",
+      "php",
+      "php_only",
+    }, -- parsers to install at startup
     auto_install = false, -- auto-install when a new filetype is encountered
     noauto_install = {}, -- blacklist from auto_install
     highlight = true, -- enable treesitter highlighting (use list to whitelist)

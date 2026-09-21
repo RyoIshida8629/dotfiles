@@ -11,8 +11,9 @@ return {
     -- mason-lspconfigの初期化
     require("mason-lspconfig").setup({
       ensure_installed = {
-        "lua_ls",       -- Lua用
-        "intelephense", -- PHP用
+        "lua_ls",       -- Lua
+        "intelephense", -- PHP
+        "omnisharp", -- C#
       },
     })
 
