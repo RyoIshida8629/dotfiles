@@ -58,4 +58,67 @@ config.color_schemes = {
 -- 定義したカラーテーマを適用
 config.color_scheme = 'solarized-osaka'
 
+-- タブバー上部のタイトルバーを表示
+config.window_decorations = "TITLE | RESIZE"
+
+-- タブが一つしかない場合はタブバーを表示しない
+config.hide_tab_bar_if_only_one_tab = true
+
+-- タブバーの背景色を変更
+config.window_background_gradient = {
+  colors = { "#00141a" },
+}
+
+-- タブバーの背景色を透過
+config.window_frame = {
+  inactive_titlebar_bg = "none",
+  active_titlebar_bg = "none",
+}
+
+-- タブバー右の+ボタンを非表示
+config.show_new_tab_button_in_tab_bar = false
+
+-- タブ右部の×ボタンを非表示
+-- nightlyでのみ使用可能なオプションのためコメントアウト
+-- config.show_close_tab_button_in_tabs = false
+
+-- タブ同士境界線を非表示
+config.colors = {
+  tab_bar = {
+    inactive_tab_edge = "none",
+  },
+}
+
+-- タブの左右のパディングに仕様する文字を変更
+local SOLID_LEFT_ARROW = wezterm.nerdfonts.ple_lower_right_triangle
+local SOLID_RIGHT_ARROW = wezterm.nerdfonts.ple_upper_left_triangle
+
+-- アクティブタブに色をつける
+wezterm.on("format-tab-title", function(tab, tabs, panes, config, hover, max_width)
+  local background = "#00141a"
+  local foreground = "#839496"
+  local edge_background = "none"
+
+  if tab.is_active then
+    background = "#859900"
+    foreground = "#FFFFFF"
+  end
+
+  local edge_foreground = background
+
+  local title = "   " .. wezterm.truncate_right(tab.active_pane.title, max_width - 1) .. "   "
+
+  return {
+    { Background = { Color = edge_background } },
+    { Foreground = { Color = edge_foreground } },
+    { Text = SOLID_LEFT_ARROW },
+    { Background = { Color = background } },
+    { Foreground = { Color = foreground } },
+    { Text = title },
+    { Background = { Color = edge_background } },
+    { Foreground = { Color = edge_foreground } },
+    { Text = SOLID_RIGHT_ARROW },
+  }
+end)
+
 return config
