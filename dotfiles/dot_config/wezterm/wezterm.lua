@@ -43,14 +43,14 @@ config.color_schemes = {
       '#eee8d5', -- white
     },
     brights = {
-      '#073642', -- bright black
-      '#cb4b16', -- bright red
-      '#586e75', -- bright green
-      '#657b83', -- bright yellow
-      '#839496', -- bright blue
-      '#6c71c4', -- bright magenta
-      '#93a1a1', -- bright cyan
-      '#fdf6e3', -- bright white
+      '#002b36', -- bright black
+      '#dc322f', -- bright red
+      '#859900', -- bright green
+      '#b58900', -- bright yellow
+      '#268bd2', -- bright blue
+      '#d33682', -- bright magenta
+      '#2aa198', -- bright cyan
+      '#eee8d5', -- bright white
     },
   },
 }

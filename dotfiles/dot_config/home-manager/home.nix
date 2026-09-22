@@ -44,16 +44,21 @@
     # shell
     eza
 
-    # command
-    unzip
-    gnumake
+    # language
     gcc
-    ripgrep
+    gnumake
     nodejs
+    dotnet-sdk
+    php
+    php84Packages.composer
+
+    # command
+    tree
+    unzip
+    ripgrep
     lazygit
     tree-sitter
-    dotnet-sdk
-    tree
+    xdg-ninja
   ];
 
   # Home Manager is pretty good at managing dotfiles. The primary way to manage
