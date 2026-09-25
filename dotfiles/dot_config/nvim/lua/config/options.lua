@@ -33,3 +33,6 @@ vim.opt.smartindent = true -- 改行時に自動で適切なインデントを�
 
 -- テキストの折り返し
 vim.opt.wrap = false -- テキストの折り返しを無効化
+
+-- dropbar.nvimの表示
+vim.ui.select = require('dropbar.utils.menu').select
