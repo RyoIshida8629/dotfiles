@@ -28,7 +28,6 @@ require("lazy").setup({
     { import = "plugins.solarized-osaka" },
     { import = "plugins.telescope" },
     { import = "plugins.oil" },
-    { import = "plugins.bufferline" },
     { import = "plugins.lualine" },
     { import = "plugins.toggleterm" },
     { import = "plugins.lsp" },
@@ -38,6 +37,11 @@ require("lazy").setup({
     { import = "plugins.tree-sitter-manager" },
     { import = "plugins.neo-tree" },
     { import = "plugins.ts-comment" },
+    { import = "plugins.nvim-treesitter-context" },
+    { import = "plugins.nvim-navbuddy" },
+    { import = "plugins.noice" },
+    { import = "plugins.nvim-hlslens" },
+    { import = "plugins.gitsigns" },
   },
   -- Configure any other settings here. See the documentation for more details.
   -- colorscheme that will be used when installing plugins.
