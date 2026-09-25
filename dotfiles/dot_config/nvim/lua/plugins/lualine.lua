@@ -15,7 +15,7 @@ return {
     return {
       options = {
         icons_enabled = true,
-        theme = "solarized-osaka", -- "auto" に変更しても現在のカラースキームに追従します
+        theme = "solarized-osaka",
         section_separators = { left = '', right = ''},
         component_separators = { left = '', right = ''},
         disabled_filetypes = {
@@ -114,7 +114,7 @@ return {
             show_filename_only = true,
             hide_filename_extension = false,
             show_modified_status = true,
-            mode = 0,
+            mode = 4,
             max_length = vim.o.columns * 2 / 3,
             filetype_names = {
               TelescopePrompt = "Telescope",
