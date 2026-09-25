@@ -42,6 +42,7 @@ require("lazy").setup({
     { import = "plugins.noice" },
     { import = "plugins.nvim-hlslens" },
     { import = "plugins.gitsigns" },
+    { import = "plugins.nvim-navic" },
   },
   -- Configure any other settings here. See the documentation for more details.
   -- colorscheme that will be used when installing plugins.
