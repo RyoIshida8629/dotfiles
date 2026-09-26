@@ -43,6 +43,7 @@ require("lazy").setup({
     { import = "plugins.nvim-hlslens" },
     { import = "plugins.gitsigns" },
     { import = "plugins.dropbar" },
+    { import = "plugins.nvim-ts-autotag" },
   },
   -- Configure any other settings here. See the documentation for more details.
   -- colorscheme that will be used when installing plugins.

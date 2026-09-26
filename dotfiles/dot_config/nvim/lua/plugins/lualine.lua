@@ -2,20 +2,12 @@ return {
   "nvim-lualine/lualine.nvim",
   dependencies = {
     "nvim-tree/nvim-web-devicons",
-    "craftzdog/solarized-osaka.nvim",
   },
   opts = function()
-    local colors = require("solarized-osaka.colors").setup()
-
-    local switch_color = {
-      active = { fg = colors.fg_dark, bg = colors.bg_dark }, 
-      inactive = { fg = colors.blue, bg = colors.bg_highlight }, 
-    }
-
     return {
       options = {
         icons_enabled = true,
-        theme = "solarized-osaka",
+        theme = "auto",
         section_separators = { left = '', right = ''},
         component_separators = { left = '', right = ''},
         disabled_filetypes = {
@@ -124,7 +116,6 @@ return {
               alpha = "Alpha",
             },
             use_mode_colors = false,
-            buffers_color = switch_color,
             symbols = {
               modified = "_󰷥",
               alternate_file = " ",
@@ -155,7 +146,7 @@ return {
           },
         },
         lualine_z = {
-          { "tabs", tabs_color = switch_color },
+          { "tabs" },
         },
       },
       winbar = {},
@@ -164,3 +155,4 @@ return {
     }
   end,
 }
+

@@ -36,3 +36,29 @@ vim.opt.wrap = false -- テキストの折り返しを無効化
 
 -- dropbar.nvimの表示
 vim.ui.select = require('dropbar.utils.menu').select
+
+vim.o.pumborder = 'rounded' -- ポップアップメニューに罫線を追加
+vim.opt.completeopt = { 'menu', 'menuone', 'noselect', 'fuzzy', 'popup' } -- popupを入れると候補の説明がプレビューされる
+
+-- LSPの補完を自動で有効化
+vim.api.nvim_create_autocmd('LspAttach', {
+  callback = function(ev)
+    local client = vim.lsp.get_client_by_id(ev.data.client_id)
+    if client and client:supports_method('textDocument/completion') then
+      vim.lsp.completion.enable(true, client.id, ev.buf, { autotrigger = true })
+    end
+  end,
+})
+
+-- HACK: ドキュメントポップアップに無理やりボーダーを付ける
+-- 現状 winborder や completeopt=popup だけではドキュメントfloatのボーダーを制御できない
+-- https://github.com/neovim/neovim/issues/38248
+-- 将来的に completepopup オプション等が実装されればこのワークアラウンドは不要になる
+local orig_complete_set = vim.api.nvim__complete_set
+vim.api.nvim__complete_set = function(...)
+  local result = orig_complete_set(...)
+  if result and result.winid then
+    pcall(vim.api.nvim_win_set_config, result.winid, { border = 'rounded' })
+  end
+  return result
+end
